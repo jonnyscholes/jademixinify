@@ -6,6 +6,7 @@ a pull request is that its about as dirty as hacks can be.
 **Jademixinify** lets you use [Jade][] mixins as template functions with [browserify][] in the simplest way possible.
 
 *This is a 0.0.1 release. It has no tests. You should not use this.*
+
 Ideally this will never reach 1.0 as it will become available in either Jadeify
 or Jade core.
 
@@ -30,9 +31,10 @@ mixin the-thing(title, link)
 
 app.js:
 ```js
-var templates = require("./template.jade");
+var templates = require('./template.jade');
+var theThingHtml = templates['the-thing']('The title', 'http://example.com/');
 
-document.getElementById("my-thing").innerHTML = templates['the-thing']('The title', 'http://example.com/');
+document.getElementById('the-thing').innerHTML = theThingHtml;
 ```
 
 ## Setup
