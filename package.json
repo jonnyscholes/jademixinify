@@ -1,0 +1,32 @@
+{
+  "name": "jademixinify",
+  "description": "A browserify transform for parsing .jade files for mixins and turning them into template functions. Based on jadeify.",
+  "keywords": [
+    "browserify",
+    "jade",
+    "templates",
+    "templating",
+    "transform"
+  ],
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnyscholes/jademixinify.gitt"
+  },
+  "main": "lib/jademixinify.js",
+  "files": [
+    "lib/"
+  ],
+  "dependencies": {
+    "through": "^2.3.6"
+  },
+  "peerDependencies": {
+    "browserify": ">= 2.4.0 < 12",
+    "jade": "^1.9.2"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "jade": "^1.11.0"
+  }
+}
